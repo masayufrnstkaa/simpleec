@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Bouquet - VA ANYA</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Link your existing CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <script>
+        function askOrder() {
+            const confirmation = confirm("Apakah tertarik ingin order?");
+            if (confirmation) {
+                window.location.href = "https://wa.me/6282178938306"; // Redirect to WhatsApp
+            }
+        }
+    </script>
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header class="header">
+        <h1>VA ANYA</h1>
+        <p>Florist & Creative Art Studio</p>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="https://wa.me/6282178938306">Contact Us</a>
+        </nav>
+    </header>
+
+    <!-- Product Section -->
+    <section id="catalogue" class="catalogue-section">
+        <div class="catalogue-header">
+            <h2>Flower in the Box</h2>
+        </div>
+        <div class="catalogue-grid">
+            <!-- Wedding Bouquet -->
+            <div class="catalogue-item">
+                <img src="f1.jpg" alt="Wedding Bouquet">
+                <h3>Flower in the Box 1</h3>
+                <h3>Rp. 100.000</h3>
+                <button onclick="askOrder()">Order Now</button>
+            </div>
+
+            <!-- Money Bouquet -->
+            <div class="catalogue-item">
+                <img src="f2.jpg" alt="Money Bouquet">
+                <h3>Flower in the Box 2</h3>
+                <h3>Rp. 100.000</h3>
+                <button onclick="askOrder()">Order Now</button>
+            </div>
+
+            <!-- Flower in the Box -->
+            <div class="catalogue-item">
+                <img src="f3.jpg" alt="Flower in the Box">
+                <h3>Flower in the Box 3</h3>
+                <h3>Rp. 100.000</h3>
+                <button onclick="askOrder()">Order Now</button>
+            </div>
+
+            <!-- Standing Acrylic -->
+            <div class="catalogue-item">
+                <img src="f4.jpg" alt="Standing Acrylic">
+                <h3>Flower in the Box 4</h3>
+                <h3>Rp. 100.000</h3>
+                <button onclick="askOrder()">Order Now</button>
+            </div>
+
+            <!-- Snack Bouquet -->
+            <div class="catalogue-item">
+                <img src="f5.jpg" alt="Snack Bouquet">
+                <h3>Flower in the Box 5</h3>
+                <h3>Rp. 100.000</h3>
+                <button onclick="askOrder()">Order Now</button>
+            </div>
+
+            <!-- Artificial Bouquet -->
+            <div class="catalogue-item">
+                <img src="f6.jpg" alt="Artificial Bouquet">
+                <h3>Flower in the Box 6</h3>
+                <h3>Rp. 100.000</h3>
+                <button onclick="askOrder()">Order Now</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 VA ANYA. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>

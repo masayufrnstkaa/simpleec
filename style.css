@@ -1,0 +1,324 @@
+/* Header Styles */
+
+.header {
+    background-color: #f8f8f8;
+    /* Light background color */
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid #d88b4a;
+    /* Bottom border */
+}
+
+.header-content {
+    margin-bottom: 20px;
+    /* Space between header and navigation */
+}
+
+.header h1 {
+    font-family: 'Playfair Display', serif;
+    /* Elegant font */
+    font-size: 2.5rem;
+    /* Larger font size for the title */
+    color: #d88b4a;
+    /* Title color */
+    margin: 0;
+    /* Remove default margin */
+}
+
+.header p {
+    font-size: 1.2rem;
+    /* Slightly larger subtitle */
+    color: #333;
+    /* Subtitle color */
+    margin: 5px 0;
+    /* Space around subtitle */
+}
+
+.navbar {
+    margin-top: 10px;
+    /* Space above the navigation */
+}
+
+.navbar ul {
+    list-style-type: none;
+    /* Remove default list styling */
+    padding: 0;
+    /* Remove default padding */
+}
+
+.navbar li {
+    display: inline;
+    /* Display items in a row */
+    margin: 0 15px;
+    /* Space between items */
+}
+
+.navbar a {
+    text-decoration: none;
+    /* Remove underline */
+    color: #d88b4a;
+    /* Link color */
+    font-weight: bold;
+    /* Make links bold */
+    transition: color 0.3s ease;
+    /* Smooth color transition */
+}
+
+.navbar a:hover {
+    color: #b6743c;
+    /* Darker color on hover */
+}
+
+
+/* Hero Section */
+
+.hero {
+    position: relative;
+    /* Positioning for the overlay */
+    background-image: url('wp.jpg');
+    /* Background image */
+    background-size: cover;
+    background-position: center;
+    padding: 100px 20px;
+    text-align: center;
+    color: #fff;
+}
+
+.hero-overlay {
+    position: absolute;
+    /* Overlay on top of the hero */
+    top: 0;
+    /* Cover from the top */
+    left: 0;
+    /* Cover from the left */
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Semi-transparent black overlay */
+    z-index: 1;
+    /* Make sure it's on top of the background */
+}
+
+.hero-content {
+    position: relative;
+    /* Position for the content to be above the overlay */
+    z-index: 2;
+    /* Ensure content is above the overlay */
+    text-align: center;
+    /* Center text */
+    padding: 20px;
+    /* Add padding for better spacing */
+}
+
+.hero-content h1 {
+    font-family: 'Playfair Display', serif;
+    /* Apply the aesthetic font */
+    font-size: 4rem;
+    /* Adjust size as needed */
+    letter-spacing: 2px;
+    /* Space between letters */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    /* Optional: adds depth to the text */
+}
+
+.hero-content p {
+    font-family: 'Poppins', sans-serif;
+    /* Use the new font */
+    font-size: 1.8rem;
+    /* Adjust font size */
+    margin-top: 10px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    /* Shadow for better readability */
+    letter-spacing: 1px;
+    /* Add letter spacing */
+    font-weight: 400;
+    /* Regular weight */
+}
+
+
+/* Contact Section */
+
+.contact-section {
+    text-align: center;
+    padding: 50px;
+    background-color: #f8f8f8;
+}
+
+.contact-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.contact-btn {
+    padding: 10px 20px;
+    background-color: #fff;
+    border: 2px solid #d88b4a;
+    color: #d88b4a;
+    text-transform: uppercase;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.contact-btn:hover {
+    background-color: #d88b4a;
+    color: #fff;
+}
+
+
+/* Reseller Button */
+
+.reseller-section {
+    margin-top: 20px;
+}
+
+.cta-button {
+    padding: 15px 30px;
+    background-color: #d88b4a;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #b6743c;
+}
+
+
+/* Catalogue Section */
+
+.catalogue-header {
+    background-color: #f7f3e7;
+    /* Light background for the box */
+    padding: 20px;
+    /* Space around the text */
+    text-align: center;
+    /* Center the text */
+    margin-bottom: 20px;
+    /* Space below the box */
+    border: 1px solid #d5a253;
+    /* Border color */
+    border-radius: 8px;
+    /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow */
+}
+
+.catalogue-header h2 {
+    margin: 0;
+    /* Remove default margin */
+    font-size: 2rem;
+    /* Increase font size */
+    color: #d5a253;
+    /* Color of the text */
+}
+
+.catalogue-section {
+    margin: 50px 0;
+    padding: 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.catalogue-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.catalogue-item {
+    width: 30%;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    /* Center the text and buttons */
+}
+
+.catalogue-item img {
+    width: 100%;
+    border-radius: 10px;
+    height: auto;
+}
+
+.catalogue-item h3 {
+    margin: 10px 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.catalogue-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.catalogue-item a {
+    text-decoration: none;
+    /* Removes the underline */
+    color: inherit;
+    /* Inherits the text color */
+    display: block;
+    /* Ensures the entire item is clickable */
+}
+
+.catalogue-item a:hover {
+    color: #D5A253;
+    /* Optional: Change the color on hover */
+}
+
+.catalogue-item img {
+    width: 100%;
+    height: auto;
+}
+
+.catalogue-item h3 {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #d88b4a;
+    /* Button background color */
+    color: white;
+    /* Button text color */
+    border: none;
+    /* Remove default border */
+    border-radius: 5px;
+    /* Rounded corners */
+    cursor: pointer;
+    /* Pointer cursor on hover */
+    text-transform: uppercase;
+    /* Uppercase text */
+    margin-top: 10px;
+    /* Space between image and button */
+    transition: background-color 0.3s ease;
+    /* Transition effect */
+}
+
+button:hover {
+    background-color: #b6743c;
+    /* Darker shade on hover */
+}
+
+
+/* Footer */
+
+footer {
+    background-color: #b6743c;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
