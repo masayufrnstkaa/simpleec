@@ -74,67 +74,112 @@
 
 .hero {
     position: relative;
-    /* Positioning for the overlay */
     background-image: url('wp.jpg');
-    /* Background image */
     background-size: cover;
     background-position: center;
     padding: 100px 20px;
     text-align: center;
     color: #fff;
+    margin-bottom: 50px;
+    /* Menambahkan jarak antara hero section dan intro section */
 }
 
 .hero-overlay {
     position: absolute;
-    /* Overlay on top of the hero */
     top: 0;
-    /* Cover from the top */
     left: 0;
-    /* Cover from the left */
     width: 100%;
-    /* Full width */
     height: 100%;
-    /* Full height */
     background-color: rgba(0, 0, 0, 0.5);
-    /* Semi-transparent black overlay */
     z-index: 1;
-    /* Make sure it's on top of the background */
 }
 
 .hero-content {
     position: relative;
-    /* Position for the content to be above the overlay */
     z-index: 2;
-    /* Ensure content is above the overlay */
     text-align: center;
-    /* Center text */
     padding: 20px;
-    /* Add padding for better spacing */
 }
 
 .hero-content h1 {
     font-family: 'Playfair Display', serif;
-    /* Apply the aesthetic font */
     font-size: 4rem;
-    /* Adjust size as needed */
     letter-spacing: 2px;
-    /* Space between letters */
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-    /* Optional: adds depth to the text */
 }
 
 .hero-content p {
     font-family: 'Poppins', sans-serif;
-    /* Use the new font */
     font-size: 1.8rem;
-    /* Adjust font size */
     margin-top: 10px;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
-    /* Shadow for better readability */
     letter-spacing: 1px;
-    /* Add letter spacing */
     font-weight: 400;
-    /* Regular weight */
+}
+
+
+/* Intro Section */
+
+.intro-section {
+    padding: 20px;
+    background-color: #f7f3e7;
+    text-align: center;
+    border: 1px solid #d5a253;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 1420px;
+    /* Samakan dengan katalog */
+    margin: 20px auto;
+    /* Pusatkan section di tengah */
+}
+
+.intro-title {
+    font-size: 2.5rem;
+    color: #d88b4a;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 20px;
+}
+
+.intro-content {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #666;
+    margin: 0 auto;
+    padding: 0 20px;
+    max-width: 800px;
+    /* Batasi lebar teks agar tetap nyaman dibaca */
+}
+
+.intro-list {
+    list-style-type: none;
+    padding: 0;
+    font-size: 1.1rem;
+    color: #333;
+    margin: 20px 0;
+}
+
+.intro-list li {
+    margin: 10px 0;
+    padding-left: 20px;
+    position: relative;
+}
+
+.intro-list li:before {
+    content: "•";
+    color: #d88b4a;
+    position: absolute;
+    left: 0;
+    font-size: 1.5rem;
+    top: -1px;
+}
+
+.intro-content p:last-of-type {
+    margin-bottom: 0;
+}
+
+.intro-content {
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 
@@ -321,4 +366,24 @@ footer {
     color: #fff;
     text-align: center;
     padding: 20px 0;
+}
+
+.map-container {
+    width: 100%;
+    /* Mengatur lebar kontainer menjadi 100% */
+    max-width: 1420px;
+    /* Mengatur lebar maksimum */
+    margin: auto;
+    /* Memusatkan kontainer */
+    overflow: hidden;
+    /* Menghindari elemen yang meluap */
+}
+
+iframe {
+    width: 100%;
+    /* Lebar iframe menjadi 100% dari kontainer */
+    height: 450px;
+    /* Atur tinggi sesuai kebutuhan */
+    border: none;
+    /* Menghilangkan border */
 }

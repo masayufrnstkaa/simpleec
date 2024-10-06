@@ -9,10 +9,14 @@
     <!-- Link your existing CSS -->
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
     <script>
-        function askOrder() {
-            const confirmation = confirm("Apakah tertarik ingin order?");
-            if (confirmation) {
-                window.location.href = "https://wa.me/6282178938306"; // Redirect to WhatsApp
+        function openWhatsApp(bouquetName) {
+            const request = prompt("Silakan masukkan permintaan Anda (misalnya: warna buket, jumlah, dll):");
+            if (request) {
+                const message = `Saya ingin memesan ${bouquetName}. Permintaan: ${request}`;
+                const whatsappURL = `https://wa.me/6282178938306?text=${encodeURIComponent(message)}`; // Redirect to WhatsApp with message
+                window.location.href = whatsappURL;
+            } else {
+                alert("Harap masukkan informasi yang valid.");
             }
         }
     </script>
@@ -41,47 +45,53 @@
                 <img src="wed1.jpg" alt="Wedding Bouquet">
                 <h3>Wedding Bouquet 1</h3>
                 <h3>Rp. 100.000</h3>
-                <button onclick="askOrder()">Order Now</button>
+                <p>Stok: <strong>10</strong></p>
+                <button onclick="openWhatsApp('Wedding Bouquet 1')">Order Now</button>
             </div>
 
-            <!-- Money Bouquet -->
+            <!-- Wedding Bouquet -->
             <div class="catalogue-item">
-                <img src="wd2.jpg" alt="Money Bouquet">
+                <img src="wd2.jpg" alt="Wedding Bouquet">
                 <h3>Wedding Bouquet 2</h3>
                 <h3>Rp. 100.000</h3>
-                <button onclick="askOrder()">Order Now</button>
+                <p>Stok: <strong>10</strong></p>
+                <button onclick="openWhatsApp('Wedding Bouquet 2')">Order Now</button>
             </div>
 
-            <!-- Flower in the Box -->
+            <!-- Wedding Bouquet -->
             <div class="catalogue-item">
-                <img src="wed3.jpg" alt="Flower in the Box">
+                <img src="wed3.jpg" alt="Wedding Bouquet">
                 <h3>Wedding Bouquet 3</h3>
                 <h3>Rp. 100.000</h3>
-                <button onclick="askOrder()">Order Now</button>
+                <p>Stok: <strong>10</strong></p>
+                <button onclick="openWhatsApp('Wedding Bouquet 3')">Order Now</button>
             </div>
 
-            <!-- Standing Acrylic -->
+            <!-- Wedding Bouquet -->
             <div class="catalogue-item">
-                <img src="wed4.jpg" alt="Standing Acrylic">
+                <img src="wed4.jpg" alt="Wedding Bouquet">
                 <h3>Wedding Bouquet 4</h3>
                 <h3>Rp. 100.000</h3>
-                <button onclick="askOrder()">Order Now</button>
+                <p>Stok: <strong>10</strong></p>
+                <button onclick="openWhatsApp('Wedding Bouquet 4')">Order Now</button>
             </div>
 
-            <!-- Snack Bouquet -->
+            <!-- Wedding Bouquet -->
             <div class="catalogue-item">
-                <img src="wed5.jpg" alt="Snack Bouquet">
+                <img src="wed5.jpg" alt="Wedding Bouquet">
                 <h3>Wedding Bouquet 5</h3>
                 <h3>Rp. 100.000</h3>
-                <button onclick="askOrder()">Order Now</button>
+                <p>Stok: <strong>10</strong></p>
+                <button onclick="openWhatsApp('Wedding Bouquet 5')">Order Now</button>
             </div>
 
-            <!-- Artificial Bouquet -->
+            <!-- Wedding Bouquet -->
             <div class="catalogue-item">
-                <img src="wed6.jpg" alt="Artificial Bouquet">
+                <img src="wed6.jpg" alt="Wedding Bouquet">
                 <h3>Wedding Bouquet 6</h3>
                 <h3>Rp. 100.000</h3>
-                <button onclick="askOrder()">Order Now</button>
+                <p>Stok: <strong>10</strong></p>
+                <button onclick="openWhatsApp('Wedding Bouquet 6')">Order Now</button>
             </div>
         </div>
     </section>
