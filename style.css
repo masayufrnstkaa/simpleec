@@ -185,9 +185,6 @@
 
 /* Contact Section */
 
-
-/* Contact Section */
-
 .contact-section {
     text-align: center;
     padding: 50px;
@@ -419,4 +416,8 @@ iframe {
     /* Atur tinggi sesuai kebutuhan */
     border: none;
     /* Menghilangkan border */
+}
+
+* {
+    box-sizing: border-box;
 }
